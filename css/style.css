@@ -7,6 +7,7 @@
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
 }
 
 /*Start Header*/
@@ -16,8 +17,8 @@ header{
 	background: linear-gradient(
 		30deg,
 		rgba(0, 0, 0, 0),
-		rgba(0, 0, 0, .5)
-	),url('../assets/img/banner/banner2.jpg');
+		rgba(0, 0, 0, 0.5)
+	), url('../assets/img/banner/banner2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -28,7 +29,11 @@ header{
 /*Start nav bar*/
 
 .navbar{
-	background: linear-gradient(rgba(0, 0, 0, .6),var(--secondary-color));
+	background: linear-gradient(
+		rgba(0, 0, 0, .6),
+		var(--secondary-color)
+	);
+
 	padding: 20px 30px;
 }
 
@@ -42,7 +47,7 @@ header{
 	color: #1aaee8;
 }
 
-.lines1, .lines2, .lines3{
+.lines1,.lines2,.lines3{
 	width: 25px;
 	height: 3px;
 	margin: 6px;
@@ -78,12 +83,12 @@ header{
 @keyframes bananni{
 	0%{
 		opacity: 0;
-		transform: translateX(-10px);
+		transform: translateX(-100px);
 	}
 
 	100%{
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateX(0);
 	}
 }
 
