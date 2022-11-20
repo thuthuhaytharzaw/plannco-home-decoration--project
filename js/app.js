@@ -27,4 +27,15 @@ $(document).ready(function(){
 
 	// End Header
 
+
+	// Start Properties
+
+	$('.propertylists').click(function(){
+		// $(this).addClass('activeitems');
+		// $(this).siblings().removeClass('activeitmes');
+		$(this).addClass('activeitems').siblings().removeClass('activeitems');
+	});
+
+	// End Properities
+
 });
